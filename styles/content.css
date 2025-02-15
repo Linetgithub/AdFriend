@@ -1,8 +1,8 @@
 .replacement-box {
-    width: 300px;
-    height: 250px;
-    background: linear-gradient(135deg, #f6d365, #fda085);
-    display: flex;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(135deg, #ed0909, #c90404);
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     font-size: 18px;

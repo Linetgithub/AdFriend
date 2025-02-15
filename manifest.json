@@ -3,14 +3,18 @@
     "name": "AdFriend",
     "version": "1.0",
     "description": "Replace ads with motivational content!",
-    "permissions": ["storage", "activeTab", "scripting"],
-    "host_permissions": ["<all_urls>"],
+    "permissions": ["storage", "declarativeNetRequest", "scripting"],
+    "host_permissions": ["*://*.doubleclick.net/*", "*://*.googlesyndication.com/*", "*://*.googleadservices.com/*"],
     "background": {
         "service_worker": "background.js"
     },
     "action": {
         "default_popup": "popup.html",
-        "default_icon": "assets/icon.png"
+        "default_icon": {
+            "16": "assets/icon16.png",
+            "48": "assets/icon48.png",
+            "128": "assets/icon128.png"
+        }
     },
     "options_page": "options.html",
     "content_scripts": [{
